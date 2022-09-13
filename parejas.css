@@ -1,16 +1,18 @@
 html{    
-    min-height: 100%;
-    position: relative;    
+    /* min-height: 100%; */
+       
 }
 body{       
     width: 99%;
     justify-self: center;
     justify-items: center;   
-    min-height: 100%;
+    height: 98.25vh;
     background-color: rgb(209, 209, 209);   
     background-image: url(resources/marte.png); 
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;   
+    
+    position: relative; 
 }
 h1{
     font-size: 48px;
@@ -78,6 +80,8 @@ h1{
     background-color: rgb(110, 56, 43, 0.75);    
 }  
 .gridcontainer3{    
+    grid-template-columns: 
+    auto auto auto auto auto auto auto auto auto;
     background-color: rgb(199, 143, 21, 0.75);     
 }
 .tamaño{
@@ -140,11 +144,15 @@ h1{
     background-position-y: center;
 }
 .footer{       
-    display: flex;    
+    display: flex;   
+
     position: absolute;     
-    top: 100%; 
+    bottom: 0; 
+    /* top: 100%; */
     right: 5px;
     left: 5px;
+    
+
     width: inherit;       
     justify-content: space-around;
     border-style: double;
